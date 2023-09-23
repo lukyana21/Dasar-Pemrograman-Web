@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Satisfy&display=swap');
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/*navbar*/
+
+#navbar-container {
+  display: flex;
+  width: 1200px;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: #F8F0E5;
+  margin-inline: auto;
+}
+
+.name{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-list{
+  align-self: center;
+  padding-inline: 2rem;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.5rem;
+  transition: all .2s ease-in-out;
+}
+
+.nav-list li:hover a {
+  background-color: #425c77;
+  color: white;
+}
+
+/*---------------------------------------------------*/
+
+/*Content*/
+
+.content {
+  width: 1200px;
+  background-color: #EADBC8;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.about-creator{
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me {
+  width: 30%;
+  justify-content: center;
+  display: flex;
+}
+
+.creator-photo {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.creator-photo img{
+  margin-left: -1rem;
+}
+
+.content-description {
+  width: 70%;
+  padding: 1rem;
+  align-self: center;
+}
+
+.title{
+  font-family: 'Satisfy', cursive;
+}
+
+h2 + p{
+  line-height: 1.5rem;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+}
+
+#resume {
+  width: 70%;
+  padding: 1rem;
+}
+
+.explanation{
+  line-height: 1.2rem;
+}
+
+section{
+  margin-bottom: 0.5rem;
+}
+
+aside {
+  width: 30%;
+}
+
+#myskill {
+  padding: 1rem 4rem;
+}
+
+/*---------------------------------------------------*/
+
+/*Footer*/
+footer {
+  width: 1200px;
+  margin-inline: auto;
+  padding: 1rem;
+  background-color: #DAC0A3;
+}
+
+footer p{
+  text-align: center;
+}
+
+/*---------------------------------------------------*/
+
+/*Responsif*/
+
+@media screen and (max-width:1199px) {
+  #navbar-container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-list{
+    margin-top: 1rem;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  .about-creator{
+    flex-direction: column;
+  }
+
+  .about-me{
+    width: 100%;
+  }
+
+  .creator-photo{
+    align-self: center;
+  }
+
+  .content-description{
+    width: 100%;
+  }
+
+  .main-content{
+    flex-direction: column;
+  }
+
+  #resume{
+    width: 100%;
+  }
+
+  .aside{
+    width: 100%;
+  }
+
+  #myskill{
+    padding: 1rem;
+  }
+
+  #myskill ul li{
+    list-style-type: none;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------*/
